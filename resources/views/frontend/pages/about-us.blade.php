@@ -17,18 +17,18 @@
         </div>
     </div>
 
-    <div class="dot-shape1"><img src="{{ asset('public/assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
-    <div class="dot-shape2"><img src="{{ asset('public/assets/frontend/img/shape/dot2.png') }}" alt="image"></div>
-    <div class="dot-shape3"><img src="{{ asset('public/assets/frontend/img/shape/dot3.png') }}" alt="image"></div>
-    <div class="dot-shape4"><img src="{{ asset('public/assets/frontend/img/shape/dot4.png') }}" alt="image"></div>
-    <div class="dot-shape5"><img src="{{ asset('public/assets/frontend/img/shape/dot5.png') }}" alt="image"></div>
-    <div class="dot-shape6"><img src="{{ asset('public/assets/frontend/img/shape/dot6.png') }}" alt="image"></div>
-    <div class="dot-shape7"><img src="{{ asset('public/assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
-    <div class="shape16"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
-    <div class="shape17"><img src="{{ asset('public/assets/frontend/img/shape/14.svg') }}" alt="image"></div>
-    <div class="shape18"><img src="{{ asset('public/assets/frontend/img/shape/15.png') }}" alt="image"></div>
-    <div class="shape19"><img src="{{ asset('public/assets/frontend/img/shape/16.png') }}" alt="image"></div>
-    <div class="shape20"><img src="{{ asset('public/assets/frontend/img/shape/14.svg') }}" alt="image"></div>
+    <div class="dot-shape1"><img src="{{ asset('assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
+    <div class="dot-shape2"><img src="{{ asset('assets/frontend/img/shape/dot2.png') }}" alt="image"></div>
+    <div class="dot-shape3"><img src="{{ asset('assets/frontend/img/shape/dot3.png') }}" alt="image"></div>
+    <div class="dot-shape4"><img src="{{ asset('assets/frontend/img/shape/dot4.png') }}" alt="image"></div>
+    <div class="dot-shape5"><img src="{{ asset('assets/frontend/img/shape/dot5.png') }}" alt="image"></div>
+    <div class="dot-shape6"><img src="{{ asset('assets/frontend/img/shape/dot6.png') }}" alt="image"></div>
+    <div class="dot-shape7"><img src="{{ asset('assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
+    <div class="shape16"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape17"><img src="{{ asset('assets/frontend/img/shape/14.svg') }}" alt="image"></div>
+    <div class="shape18"><img src="{{ asset('assets/frontend/img/shape/15.png') }}" alt="image"></div>
+    <div class="shape19"><img src="{{ asset('assets/frontend/img/shape/16.png') }}" alt="image"></div>
+    <div class="shape20"><img src="{{ asset('assets/frontend/img/shape/14.svg') }}" alt="image"></div>
 </div>
 <!-- End Page Title Area -->
 
@@ -38,7 +38,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-image">
-                    <img src="{{ asset('public/assets/frontend/img/about-img1.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/about-img1.jpg') }}" alt="image">
                 </div>
             </div>
 
@@ -140,7 +140,7 @@
             </div>
 
             <div class="image">
-                <img src="{{ asset('public/assets/frontend/img/section-title/4.png') }}" alt="image">
+                <img src="{{ asset('assets/frontend/img/section-title/4.png') }}" alt="image">
             </div>
         </div>
 
@@ -148,7 +148,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-box">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/1.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -168,7 +168,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-box">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/2.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/2.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -188,7 +188,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-box">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/3.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/3.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -208,7 +208,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-box">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/4.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/4.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -227,8 +227,8 @@
         </div>
     </div>
 
-    <div class="shape13"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
-    <div class="shape14"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape13"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape14"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
 </section>
 <!-- End Team Area -->
 
@@ -244,7 +244,7 @@
                         </p>
 
                         <div class="client-info">
-                            <img src="{{ asset('public/assets/frontend/img/author1.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/frontend/img/author1.jpg') }}" alt="image">
 
                             <h3>John Doe</h3>
                             <span>Marketing</span>
@@ -257,7 +257,7 @@
                         </p>
 
                         <div class="client-info">
-                            <img src="{{ asset('public/assets/frontend/img/author2.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/frontend/img/author2.jpg') }}" alt="image">
 
                             <h3>Steven Smith</h3>
                             <span>Marketing</span>
@@ -270,7 +270,7 @@
                         </p>
 
                         <div class="client-info">
-                            <img src="{{ asset('public/assets/frontend/img/author3.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/frontend/img/author3.jpg') }}" alt="image">
 
                             <h3>Sarah Taylor</h3>
                             <span>Designer</span>
@@ -278,7 +278,7 @@
                     </div>
                 </div>
 
-                <div class="circle-map"><img src="{{ asset('public/assets/frontend/img/circle-map3.png') }}" alt="image"></div>
+                <div class="circle-map"><img src="{{ asset('assets/frontend/img/circle-map3.png') }}" alt="image"></div>
             </div>
 
             <a href="https://www.youtube.com/watch?v=bk7McNUjWgw" class="video-btn popup-youtube"><i

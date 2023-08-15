@@ -17,18 +17,18 @@
         </div>
     </div>
 
-    <div class="dot-shape1"><img src="{{ asset('public/assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
-    <div class="dot-shape2"><img src="{{ asset('public/assets/frontend/img/shape/dot2.png') }}" alt="image"></div>
-    <div class="dot-shape3"><img src="{{ asset('public/assets/frontend/img/shape/dot3.png') }}" alt="image"></div>
-    <div class="dot-shape4"><img src="{{ asset('public/assets/frontend/img/shape/dot4.png') }}" alt="image"></div>
-    <div class="dot-shape5"><img src="{{ asset('public/assets/frontend/img/shape/dot5.png') }}" alt="image"></div>
-    <div class="dot-shape6"><img src="{{ asset('public/assets/frontend/img/shape/dot6.png') }}" alt="image"></div>
-    <div class="dot-shape7"><img src="{{ asset('public/assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
-    <div class="shape16"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
-    <div class="shape17"><img src="{{ asset('public/assets/frontend/img/shape/14.svg') }}" alt="image"></div>
-    <div class="shape18"><img src="{{ asset('public/assets/frontend/img/shape/15.png') }}" alt="image"></div>
-    <div class="shape19"><img src="{{ asset('public/assets/frontend/img/shape/16.png') }}" alt="image"></div>
-    <div class="shape20"><img src="{{ asset('public/assets/frontend/img/shape/14.svg') }}" alt="image"></div>
+    <div class="dot-shape1"><img src="{{ asset('assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
+    <div class="dot-shape2"><img src="{{ asset('assets/frontend/img/shape/dot2.png') }}" alt="image"></div>
+    <div class="dot-shape3"><img src="{{ asset('assets/frontend/img/shape/dot3.png') }}" alt="image"></div>
+    <div class="dot-shape4"><img src="{{ asset('assets/frontend/img/shape/dot4.png') }}" alt="image"></div>
+    <div class="dot-shape5"><img src="{{ asset('assets/frontend/img/shape/dot5.png') }}" alt="image"></div>
+    <div class="dot-shape6"><img src="{{ asset('assets/frontend/img/shape/dot6.png') }}" alt="image"></div>
+    <div class="dot-shape7"><img src="{{ asset('assets/frontend/img/shape/dot1.png') }}" alt="image"></div>
+    <div class="shape16"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape17"><img src="{{ asset('assets/frontend/img/shape/14.svg') }}" alt="image"></div>
+    <div class="shape18"><img src="{{ asset('assets/frontend/img/shape/15.png') }}" alt="image"></div>
+    <div class="shape19"><img src="{{ asset('assets/frontend/img/shape/16.png') }}" alt="image"></div>
+    <div class="shape20"><img src="{{ asset('assets/frontend/img/shape/14.svg') }}" alt="image"></div>
 </div>
 <!-- End Page Title Area -->
 
@@ -127,8 +127,8 @@
         </div>
     </div>
 
-    <div class="shape13"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
-    <div class="shape14"><img src="{{ asset('public/assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape13"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
+    <div class="shape14"><img src="{{ asset('assets/frontend/img/shape/13.svg') }}" alt="image"></div>
 </section>
 <!-- End Services Area -->
 @endsection

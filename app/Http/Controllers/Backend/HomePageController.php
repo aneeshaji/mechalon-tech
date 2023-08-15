@@ -226,7 +226,7 @@ class HomePageController extends Controller
             }
 
             //Image/File Uploads
-           // self::fileUploads($homeSettingsObj, $request);
+            self::fileUploads($homeSettingsObj, $request);
 
             //Saving Data
             if ($request->page_main_title_1 != null) {

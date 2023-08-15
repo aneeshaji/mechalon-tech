@@ -16,13 +16,13 @@
                         <div class="row ">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="title">Main Title 1 (Banner)<span class="required">*</span></label>
+                                    <label class="control-label" for="title">Main Title 1 (Banner) </label>
                                     <input type="text" class="form-control" id="page_main_title_1" name="page_main_title_1" value="{{ $homeSettings->page_main_title_1 ?? '' }}" placeholder="Enter Main Title 1" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="slug">Main Title 2 (Banner)<span class="required">*</span></label>
+                                    <label class="control-label" for="slug">Main Title 2 (Banner) </label>
                                     <input type="text" class="form-control" id="page_main_title_2" name="page_main_title_2" value="{{ $homeSettings->page_main_title_2 ?? '' }}" placeholder="Enter Main Title 2" />
                                 </div>
                             </div>
@@ -31,14 +31,14 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="image">Banner Image 1<span class="required">*</span></label>
+                                    <label class="control-label" for="image">Banner Image 1 </label>
                                     <input type="file" class="form-control dropify" data-height="70" data-allowed-file-extensions="png jpg jpeg webp" id="banner_image_1" name="banner_image_1" value="{{ old('banner_image_1') }}"/>
                                 </div>
                             </div>
 
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="control-label" for="image">Banner Image 2<span class="required">*</span></label>
+                                    <label class="control-label" for="image">Banner Image 2 </label>
                                     <input type="file" class="form-control dropify" data-height="70" data-allowed-file-extensions="png jpg jpeg webp" id="banner_image_2" name="banner_image_2" value="{{ old('banner_image_2') }}"/>
                                 </div>
                             </div>
