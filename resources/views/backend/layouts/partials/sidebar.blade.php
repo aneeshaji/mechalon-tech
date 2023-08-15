@@ -142,7 +142,7 @@
                 @endif
 
                 @if ($user->can('service.view') || $user->can('service.create'))
-                <li class="sidebar-item ">
+                <!-- <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-arrow-right-drop-circle"></i>
                         <span class="hide-menu">Services </span>
@@ -166,7 +166,7 @@
                         </li>
                         @endif
                     </ul>
-                </li>
+                </li> -->
                 @endif
 
                 <!-- @if ($user->can('booking_request.view') || $user->can('booking_request.edit') || $user->can('booking_request.delete'))
@@ -193,7 +193,7 @@
                 @endif
 
                 @if ($user->can('blog.view') || $user->can('blog.create'))
-                    <li class="sidebar-item ">
+                    <!-- <li class="sidebar-item ">
                         <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                             <i class="mdi mdi-view-list"></i>
                             <span class="hide-menu">Blogs </span>
@@ -217,11 +217,11 @@
                                 </li>
                             @endif
                         </ul>
-                    </li>
+                    </li> -->
                 @endif
 
                 @if ($user->can('contact.view') || $user->can('contact.create'))
-                    <li class="sidebar-item ">
+                    <!-- <li class="sidebar-item ">
                         <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                             <i class="mdi mdi-email"></i>
                             <span class="hide-menu">Contact Message </span>
@@ -236,7 +236,7 @@
                                 </li>
                             @endif
                         </ul>
-                    </li>
+                    </li> -->
                 @endif
 
                 {{-- <li class="nav-small-cap">

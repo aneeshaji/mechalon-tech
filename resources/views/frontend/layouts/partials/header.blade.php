@@ -142,7 +142,7 @@
                             </ul>
                         </li> -->
 
-                        <li class="nav-item"><a href="#" class="nav-link">Blog <i
+                        <!-- <li class="nav-item"><a href="#" class="nav-link">Blog <i
                                     class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="#" class="nav-link">Blog Grid</a></li>
@@ -151,7 +151,7 @@
 
                                 <li class="nav-item"><a href="#" class="nav-link">Blog Details</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                     </ul>

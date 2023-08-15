@@ -17,13 +17,13 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="control-label" for="title">Main Title 1 (Banner)<span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="page_main_title_1" name="page_main_title_1" value="{{ $homeSettings->page_main_title_1 ?: '' }}" placeholder="Enter Main Title 1" />
+                                    <input type="text" class="form-control" id="page_main_title_1" name="page_main_title_1" value="{{ $homeSettings->page_main_title_1 ?? '' }}" placeholder="Enter Main Title 1" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="control-label" for="slug">Main Title 2 (Banner)<span class="required">*</span></label>
-                                    <input type="text" class="form-control" id="page_main_title_2" name="page_main_title_2" value="{{ $homeSettings->page_main_title_2 ?: '' }}" placeholder="Enter Main Title 2" />
+                                    <input type="text" class="form-control" id="page_main_title_2" name="page_main_title_2" value="{{ $homeSettings->page_main_title_2 ?? '' }}" placeholder="Enter Main Title 2" />
                                 </div>
                             </div>
                         </div>
@@ -48,13 +48,13 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Page Main Description 1 <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="page_main_description_1" name="page_main_description_1">{!! $homeSettings->page_main_description_1 ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="page_main_description_1" name="page_main_description_1">{!! $homeSettings->page_main_description_1 ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Page Main Description 2<span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="page_main_description_2" name="page_main_description_2"">{!! $homeSettings->page_main_description_2 ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="page_main_description_2" name="page_main_description_2"">{!! $homeSettings->page_main_description_2 ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                                     <label class="control-label" for="slug">Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="read_more_btn_link" name="read_more_btn_link"
-                                        value="{{ $homeSettings->read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->read_more_btn_link ?? '' }}"
                                         placeholder="Enter Get Started Button Link" />
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                     <label class="control-label" for="slug">Get Started Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="get_started_btn_link" name="get_started_btn_link"
-                                        value="{{ $homeSettings->get_started_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->get_started_btn_link ?? '' }}"
                                         placeholder="Enter Get Started Button Link" />
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                     <label class="control-label" for="slug">Main Service Title 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_title_1" name="main_service_title_1"
-                                        value="{{ $homeSettings->main_service_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_title_1 ?? '' }}"
                                         placeholder="Enter Main Service Title 1" />
                                 </div>
                             </div>
@@ -97,7 +97,7 @@
                                     <label class="control-label" for="slug">Main Service Read More Button Link 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_read_more_btn_link_1" name="main_service_read_more_btn_link_1"
-                                        value="{{ $homeSettings->main_service_read_more_btn_link_1 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_read_more_btn_link_1 ?? '' }}"
                                         placeholder="Enter Main Service Read More Button Link 1" />
                                 </div>
                             </div>
@@ -106,7 +106,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Main Service Description 1 <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_1" name="main_service_description_1">{!! $homeSettings->main_service_description_1 ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_1" name="main_service_description_1">{!! $homeSettings->main_service_description_1 ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -125,7 +125,7 @@
                                     <label class="control-label" for="slug">Main Service Title 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_title_2" name="main_service_title_2"
-                                        value="{{ $homeSettings->main_service_title_2 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_title_2 ?? '' }}"
                                         placeholder="Enter Main Service Title 2" />
                                 </div>
                             </div>
@@ -134,7 +134,7 @@
                                     <label class="control-label" for="slug">Main Service Read More Button Link 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_read_more_btn_link_2" name="main_service_read_more_btn_link_2"
-                                        value="{{ $homeSettings->main_service_read_more_btn_link_2 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_read_more_btn_link_2 ?? '' }}"
                                         placeholder="Enter Main Service Read More Button Link 2" />
                                 </div>
                             </div>
@@ -143,7 +143,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Main Service Description 2 <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_2" name="main_service_description_2">{!! $homeSettings->main_service_description_2 ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_2" name="main_service_description_2">{!! $homeSettings->main_service_description_2 ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -162,7 +162,7 @@
                                     <label class="control-label" for="slug">Main Service Title 3 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_title_3" name="main_service_title_3"
-                                        value="{{ $homeSettings->main_service_title_3 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_title_3 ?? '' }}"
                                         placeholder="Enter Main Service Title 3" />
                                 </div>
                             </div>
@@ -171,7 +171,7 @@
                                     <label class="control-label" for="slug">Main Service Read More Button Link 3 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="main_service_read_more_btn_link_3" name="main_service_read_more_btn_link_3"
-                                        value="{{ $homeSettings->main_service_read_more_btn_link_3 ?: '' }}"
+                                        value="{{ $homeSettings->main_service_read_more_btn_link_3 ?? '' }}"
                                         placeholder="Enter Main Service Read More Button Link 3" />
                                 </div>
                             </div>
@@ -180,7 +180,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Main Service Description 3 <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_3" name="main_service_description_3"">{!! $homeSettings->main_service_description_3 ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="main_service_description_3" name="main_service_description_3"">{!! $homeSettings->main_service_description_3 ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -200,7 +200,7 @@
                                     <label class="control-label" for="slug">About Us Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="about_us_section_title" name="about_us_section_title"
-                                        value="{{ $homeSettings->about_us_section_title ?: '' }}"
+                                        value="{{ $homeSettings->about_us_section_title ?? '' }}"
                                         placeholder="Enter About Us Section Title" />
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                     <label class="control-label" for="slug">About Us Section View More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="about_us_section_view_more_btn_link" name="about_us_section_view_more_btn_link"
-                                        value="{{ $homeSettings->about_us_section_view_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->about_us_section_view_more_btn_link ?? '' }}"
                                         placeholder="Enter About Us Section View More Button Link" />
                                 </div>
                             </div>
@@ -218,7 +218,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">About Us Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="about_us_section_description" name="about_us_section_description">{!! $homeSettings->about_us_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="about_us_section_description" name="about_us_section_description">{!! $homeSettings->about_us_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -236,14 +236,14 @@
                                     <label class="control-label" for="slug">Services Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_title" name="services_section_title"
-                                        value="{{ $homeSettings->services_section_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_title ?? '' }}"
                                         placeholder="Enter Services Section Title" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_description" name="services_section_description">{!! $homeSettings->services_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_description" name="services_section_description">{!! $homeSettings->services_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -255,7 +255,7 @@
                                     <label class="control-label" for="slug">Services Section Box 1 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_1_title" name="services_section_box_1_title"
-                                        value="{{ $homeSettings->services_section_box_1_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_1_title ?? '' }}"
                                         placeholder="Enter Services Section Box 1 Title" />
                                 </div>
                             </div>
@@ -264,7 +264,7 @@
                                     <label class="control-label" for="slug">Services Section Box 1 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_1_read_more_btn_link" name="services_section_box_1_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_1_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_1_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 1 Read More Button Link" />
                                 </div>
                             </div>
@@ -273,7 +273,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 1 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_1_description" name="services_section_box_1_description">{!! $homeSettings->services_section_box_1_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_1_description" name="services_section_box_1_description">{!! $homeSettings->services_section_box_1_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -292,7 +292,7 @@
                                     <label class="control-label" for="slug">Services Section Box 2 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_2_title" name="services_section_box_2_title"
-                                        value="{{ $homeSettings->services_section_box_2_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_2_title ?? '' }}"
                                         placeholder="Enter Services Section Box 2 Title" />
                                 </div>
                             </div>
@@ -301,7 +301,7 @@
                                     <label class="control-label" for="slug">Services Section Box 2 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_2_read_more_btn_link" name="services_section_box_2_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_2_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_2_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 2 Read More Button Link" />
                                 </div>
                             </div>
@@ -310,7 +310,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 2 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_2_description" name="services_section_box_2_description">{!! $homeSettings->services_section_box_2_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_2_description" name="services_section_box_2_description">{!! $homeSettings->services_section_box_2_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -329,7 +329,7 @@
                                     <label class="control-label" for="slug">Services Section Box 3 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_3_title" name="services_section_box_3_title"
-                                        value="{{ $homeSettings->services_section_box_3_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_3_title ?? '' }}"
                                         placeholder="Enter Services Section Box 3 Title" />
                                 </div>
                             </div>
@@ -338,7 +338,7 @@
                                     <label class="control-label" for="slug">Services Section Box 3 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_3_read_more_btn_link" name="services_section_box_3_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_3_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_3_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 3 Read More Button Link" />
                                 </div>
                             </div>
@@ -347,7 +347,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 3 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_3_description" name="services_section_box_3_description">{!! $homeSettings->services_section_box_3_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_3_description" name="services_section_box_3_description">{!! $homeSettings->services_section_box_3_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -366,7 +366,7 @@
                                     <label class="control-label" for="slug">Services Section Box 4 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_4_title" name="services_section_box_4_title"
-                                        value="{{ $homeSettings->services_section_box_4_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_4_title ?? '' }}"
                                         placeholder="Enter Services Section Box 4 Title" />
                                 </div>
                             </div>
@@ -375,7 +375,7 @@
                                     <label class="control-label" for="slug">Services Section Box 4 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_4_read_more_btn_link" name="services_section_box_4_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_4_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_4_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 4 Read More Button Link" />
                                 </div>
                             </div>
@@ -384,7 +384,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 4 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_4_description" name="services_section_box_4_description">{!! $homeSettings->services_section_box_4_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_4_description" name="services_section_box_4_description">{!! $homeSettings->services_section_box_4_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -403,7 +403,7 @@
                                     <label class="control-label" for="slug">Services Section Box 5 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_4_title" name="services_section_box_5_title"
-                                        value="{{ $homeSettings->services_section_box_4_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_4_title ?? '' }}"
                                         placeholder="Enter Services Section Box 5 Title" />
                                 </div>
                             </div>
@@ -412,7 +412,7 @@
                                     <label class="control-label" for="slug">Services Section Box 5 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_5_read_more_btn_link" name="services_section_box_5_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_5_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_5_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 5 Read More Button Link" />
                                 </div>
                             </div>
@@ -421,7 +421,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 5 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_5_description" name="services_section_box_5_description">{!! $homeSettings->services_section_box_5_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_5_description" name="services_section_box_5_description">{!! $homeSettings->services_section_box_5_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -440,7 +440,7 @@
                                     <label class="control-label" for="slug">Services Section Box 6 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_6_title" name="services_section_box_6_title"
-                                        value="{{ $homeSettings->services_section_box_6_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_6_title ?? '' }}"
                                         placeholder="Enter Services Section Box 6 Title" />
                                 </div>
                             </div>
@@ -449,7 +449,7 @@
                                     <label class="control-label" for="slug">Services Section Box 6 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_6_read_more_btn_link" name="services_section_box_6_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_6_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_6_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 6 Read More Button Link" />
                                 </div>
                             </div>
@@ -458,7 +458,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 6 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_6_description" name="services_section_box_6_description">{!! $homeSettings->services_section_box_6_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_6_description" name="services_section_box_6_description">{!! $homeSettings->services_section_box_6_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -477,7 +477,7 @@
                                     <label class="control-label" for="slug">Services Section Box 7 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_7_title" name="services_section_box_7_title"
-                                        value="{{ $homeSettings->services_section_box_7_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_7_title ?? '' }}"
                                         placeholder="Enter Services Section Box 7 Title" />
                                 </div>
                             </div>
@@ -486,7 +486,7 @@
                                     <label class="control-label" for="slug">Services Section Box 7 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_7_read_more_btn_link" name="services_section_box_7_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_7_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_7_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 7 Read More Button Link" />
                                 </div>
                             </div>
@@ -495,7 +495,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 7 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_7_description" name="services_section_box_7_description">{!! $homeSettings->services_section_box_7_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_7_description" name="services_section_box_7_description">{!! $homeSettings->services_section_box_7_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -514,7 +514,7 @@
                                     <label class="control-label" for="slug">Services Section Box 8 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_8_title" name="services_section_box_8_title"
-                                        value="{{ $homeSettings->services_section_box_8_title ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_8_title ?? '' }}"
                                         placeholder="Enter Services Section Box 8 Title" />
                                 </div>
                             </div>
@@ -523,7 +523,7 @@
                                     <label class="control-label" for="slug">Services Section Box 8 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="services_section_box_8_read_more_btn_link" name="services_section_box_8_read_more_btn_link"
-                                        value="{{ $homeSettings->services_section_box_8_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->services_section_box_8_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Services Section Box 8 Read More Button Link" />
                                 </div>
                             </div>
@@ -532,7 +532,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Services Section Box 8 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_8_description" name="services_section_box_8_description">{!! $homeSettings->services_section_box_8_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="services_section_box_8_description" name="services_section_box_8_description">{!! $homeSettings->services_section_box_8_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -552,14 +552,14 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_title" name="why_choose_us_section_title"
-                                        value="{{ $homeSettings->why_choose_us_section_title ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_title ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Title" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Why Choose Us Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_description" name="why_choose_us_section_description">{!! $homeSettings->why_choose_us_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_description" name="why_choose_us_section_description">{!! $homeSettings->why_choose_us_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -570,7 +570,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 1 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_1_title" name="why_choose_us_section_box_1_title"
-                                        value="{{ $homeSettings->why_choose_us_section_box_1_title ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_1_title ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 1 Title" />
                                 </div>
                             </div>
@@ -579,7 +579,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 1 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_1_read_more_btn_link" name="why_choose_us_section_box_1_read_more_btn_link"
-                                        value="{{ $homeSettings->why_choose_us_section_box_1_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_1_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 1 Read More Button Link" />
                                 </div>
                             </div>
@@ -588,7 +588,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Why Choose Us Section Box 1 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_1_description" name="why_choose_us_section_box_1_description">{!! $homeSettings->why_choose_us_section_box_1_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_1_description" name="why_choose_us_section_box_1_description">{!! $homeSettings->why_choose_us_section_box_1_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -615,7 +615,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 2 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_2_title" name="why_choose_us_section_box_2_title"
-                                        value="{{ $homeSettings->why_choose_us_section_box_2_title ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_2_title ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 2 Title" />
                                 </div>
                             </div>
@@ -624,7 +624,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 2 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_2_read_more_btn_link" name="why_choose_us_section_box_2_read_more_btn_link"
-                                        value="{{ $homeSettings->why_choose_us_section_box_2_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_2_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 2 Read More Button Link" />
                                 </div>
                             </div>
@@ -633,7 +633,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Why Choose Us Section Box 2 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_2_description" name="why_choose_us_section_box_2_description">{!! $homeSettings->why_choose_us_section_box_2_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_2_description" name="why_choose_us_section_box_2_description">{!! $homeSettings->why_choose_us_section_box_2_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -660,7 +660,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 3 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_3_title" name="why_choose_us_section_box_3_title"
-                                        value="{{ $homeSettings->why_choose_us_section_box_3_title ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_3_title ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 3 Title" />
                                 </div>
                             </div>
@@ -669,7 +669,7 @@
                                     <label class="control-label" for="slug">Why Choose Us Section Box 3 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="why_choose_us_section_box_3_read_more_btn_link" name="why_choose_us_section_box_3_read_more_btn_link"
-                                        value="{{ $homeSettings->why_choose_us_section_box_3_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->why_choose_us_section_box_3_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Why Choose Us Section Box 3 Read More Button Link" />
                                 </div>
                             </div>
@@ -678,7 +678,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Why Choose Us Section Box 3 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_3_description" name="why_choose_us_section_box_3_description">{!! $homeSettings->why_choose_us_section_box_3_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="why_choose_us_section_box_3_description" name="why_choose_us_section_box_3_description">{!! $homeSettings->why_choose_us_section_box_3_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -706,7 +706,7 @@
                                     <label class="control-label" for="slug">What We Do Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_title" name="what_we_do_section_title"
-                                        value="{{ $homeSettings->what_we_do_section_title ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_title ?? '' }}"
                                         placeholder="Enter What We Do Section Title" />
                                 </div>
                             </div>
@@ -721,7 +721,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">What We Do Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="what_we_do_section_description" name="what_we_do_section_description">{!! $homeSettings->what_we_do_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="what_we_do_section_description" name="what_we_do_section_description">{!! $homeSettings->what_we_do_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -732,7 +732,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 1 Title 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_1_title_1" name="what_we_do_section_circle_1_title_1"
-                                        value="{{ $homeSettings->what_we_do_section_circle_1_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_1_title_1 ?? '' }}"
                                         placeholder="What We Do Section Circle 1 Title 1" />
                                 </div>
                             </div>
@@ -741,7 +741,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 1 Title 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_1_title_1" name="what_we_do_section_circle_1_title_2"
-                                        value="{{ $homeSettings->what_we_do_section_circle_1_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_1_title_1 ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 1 Title 2" />
                                 </div>
                             </div>
@@ -750,7 +750,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 1 Percentage <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_1_percentage" name="what_we_do_section_circle_1_percentage"
-                                        value="{{ $homeSettings->what_we_do_section_circle_1_percentage ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_1_percentage ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 1 Percentage" />
                                 </div>
                             </div>
@@ -763,7 +763,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 2 Title 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_2_title_1" name="what_we_do_section_circle_2_title_1"
-                                        value="{{ $homeSettings->what_we_do_section_circle_2_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_2_title_1 ?? '' }}"
                                         placeholder="What We Do Section Circle 2 Title 1" />
                                 </div>
                             </div>
@@ -772,7 +772,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 2 Title 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_2_title_2" name="what_we_do_section_circle_2_title_2"
-                                        value="{{ $homeSettings->what_we_do_section_circle_2_title_2 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_2_title_2 ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 2 Title 2" />
                                 </div>
                             </div>
@@ -781,7 +781,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 2 Percentage <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_2_percentage" name="what_we_do_section_circle_2_percentage"
-                                        value="{{ $homeSettings->what_we_do_section_circle_2_percentage ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_2_percentage ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 2 Percentage" />
                                 </div>
                             </div>
@@ -794,7 +794,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 3 Title 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_3_title_1" name="what_we_do_section_circle_3_title_1"
-                                        value="{{ $homeSettings->what_we_do_section_circle_3_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_3_title_1 ?? '' }}"
                                         placeholder="What We Do Section Circle 3 Title 1" />
                                 </div>
                             </div>
@@ -803,7 +803,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 3 Title 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_3_title_2" name="what_we_do_section_circle_3_title_2"
-                                        value="{{ $homeSettings->what_we_do_section_circle_3_title_2 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_3_title_2 ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 3 Title 2" />
                                 </div>
                             </div>
@@ -812,7 +812,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 3 Percentage <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_3_percentage" name="what_we_do_section_circle_3_percentage"
-                                        value="{{ $homeSettings->what_we_do_section_circle_3_percentage ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_3_percentage ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 3 Percentage" />
                                 </div>
                             </div>
@@ -825,7 +825,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 4 Title 1 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_4_title_1" name="what_we_do_section_circle_4_title_1"
-                                        value="{{ $homeSettings->what_we_do_section_circle_4_title_1 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_4_title_1 ?? '' }}"
                                         placeholder="What We Do Section Circle 4 Title 1" />
                                 </div>
                             </div>
@@ -834,7 +834,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 4 Title 2 <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_4_title_2" name="what_we_do_section_circle_4_title_2"
-                                        value="{{ $homeSettings->what_we_do_section_circle_4_title_2 ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_4_title_2 ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 4 Title 2" />
                                 </div>
                             </div>
@@ -843,7 +843,7 @@
                                     <label class="control-label" for="slug">What We Do Section Circle 4 Percentage <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="what_we_do_section_circle_4_percentage" name="what_we_do_section_circle_4_percentage"
-                                        value="{{ $homeSettings->what_we_do_section_circle_4_percentage ?: '' }}"
+                                        value="{{ $homeSettings->what_we_do_section_circle_4_percentage ?? '' }}"
                                         placeholder="Enter What We Do Section Circle 4 Percentage" />
                                 </div>
                             </div>
@@ -858,7 +858,7 @@
                                     <label class="control-label" for="slug">Contact Banner Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="contact_banner_section_title" name="contact_banner_section_title"
-                                        value="{{ $homeSettings->contact_banner_section_title ?: '' }}"
+                                        value="{{ $homeSettings->contact_banner_section_title ?? '' }}"
                                         placeholder="Enter Contact Banner Section Title" />
                                 </div>
                             </div>
@@ -867,7 +867,7 @@
                                     <label class="control-label" for="slug">Contact Banner Section Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="contact_banner_section_btn_link" name="contact_banner_section_btn_link"
-                                        value="{{ $homeSettings->contact_banner_section_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->contact_banner_section_btn_link ?? '' }}"
                                         placeholder="Enter Contact Banner Section Button Link" />
                                 </div>
                             </div>
@@ -876,7 +876,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Contact Banner Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="contact_banner_section_description" name="contact_banner_section_description">{!! $homeSettings->contact_banner_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="contact_banner_section_description" name="contact_banner_section_description">{!! $homeSettings->contact_banner_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -895,14 +895,14 @@
                                     <label class="control-label" for="slug">Our Process Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_title" name="our_process_section_title"
-                                        value="{{ $homeSettings->our_process_section_title ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_title ?? '' }}"
                                         placeholder="Enter Our Process Section Title" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Our Process Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_description" name="our_process_section_description">{!! $homeSettings->our_process_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_description" name="our_process_section_description">{!! $homeSettings->our_process_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -913,7 +913,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 1 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_1_title" name="our_process_section_box_1_title"
-                                        value="{{ $homeSettings->our_process_section_box_1_title ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_1_title ?? '' }}"
                                         placeholder="Enter Our Process Section Box 1 Title" />
                                 </div>
                             </div>
@@ -922,7 +922,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 1 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_1_read_more_btn_link" name="our_process_section_box_1_read_more_btn_link"
-                                        value="{{ $homeSettings->our_process_section_box_1_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_1_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Our Process Section Box 1 Read More Button Link" />
                                 </div>
                             </div>
@@ -931,7 +931,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Our Process Section Box 1 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_1_description" name="our_process_section_box_1_description">{!! $homeSettings->our_process_section_box_1_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_1_description" name="our_process_section_box_1_description">{!! $homeSettings->our_process_section_box_1_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -949,7 +949,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 2 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_2_title" name="our_process_section_box_2_title"
-                                        value="{{ $homeSettings->our_process_section_box_2_title ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_2_title ?? '' }}"
                                         placeholder="Enter Our Process Section Box 2 Title" />
                                 </div>
                             </div>
@@ -958,7 +958,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 2 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_2_read_more_btn_link" name="our_process_section_box_2_read_more_btn_link"
-                                        value="{{ $homeSettings->our_process_section_box_2_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_2_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Our Process Section Box 2 Read More Button Link" />
                                 </div>
                             </div>
@@ -967,7 +967,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Our Process Section Box 2 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_2_description" name="our_process_section_box_2_description">{!! $homeSettings->our_process_section_box_2_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_2_description" name="our_process_section_box_2_description">{!! $homeSettings->our_process_section_box_2_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -985,7 +985,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 2 Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_3_title" name="our_process_section_box_3_title"
-                                        value="{{ $homeSettings->our_process_section_box_3_title ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_3_title ?? '' }}"
                                         placeholder="Enter Our Process Section Box 3 Title" />
                                 </div>
                             </div>
@@ -994,7 +994,7 @@
                                     <label class="control-label" for="slug">Our Process Section Box 2 Read More Button Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_process_section_box_3_read_more_btn_link" name="our_process_section_box_3_read_more_btn_link"
-                                        value="{{ $homeSettings->our_process_section_box_3_read_more_btn_link ?: '' }}"
+                                        value="{{ $homeSettings->our_process_section_box_3_read_more_btn_link ?? '' }}"
                                         placeholder="Enter Our Process Section Box 3 Read More Button Link" />
                                 </div>
                             </div>
@@ -1003,7 +1003,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Our Process Section Box 2 Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_3_description" name="our_process_section_box_3_description">{!! $homeSettings->our_process_section_box_3_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="our_process_section_box_3_description" name="our_process_section_box_3_description">{!! $homeSettings->our_process_section_box_3_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -1023,14 +1023,14 @@
                                     <label class="control-label" for="slug">Our Team Section Title <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_title" name="our_team_section_title"
-                                        value="{{ $homeSettings->our_team_section_title ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_title ?? '' }}"
                                         placeholder="Enter Our Team Section Title" />
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label class="control-label" for="description">Our Team Section Description <span class="optional">(optional)</span></label>
-                                    <textarea type="text" class="form-control tinymce_advance" id="our_team_section_description" name="our_team_section_description">{!! $homeSettings->our_team_section_description ?: '' !!}</textarea>
+                                    <textarea type="text" class="form-control tinymce_advance" id="our_team_section_description" name="our_team_section_description">{!! $homeSettings->our_team_section_description ?? '' !!}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -1041,7 +1041,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 Name <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_name" name="our_team_section_box_1_name"
-                                        value="{{ $homeSettings->our_team_section_box_1_name ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_name ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 Name" />
                                 </div>
                             </div>
@@ -1050,7 +1050,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 Designation <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_designation" name="our_team_section_box_1_designation"
-                                        value="{{ $homeSettings->our_team_section_box_1_designation ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_designation ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 Designation" />
                                 </div>
                             </div>
@@ -1069,7 +1069,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 Facebook Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_facebook_link" name="our_team_section_box_1_facebook_link"
-                                        value="{{ $homeSettings->our_team_section_box_1_facebook_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_facebook_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 Facebook Link" />
                                 </div>
                             </div>
@@ -1078,7 +1078,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 Twitter Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_twitter_link" name="our_team_section_box_1_twitter_link"
-                                        value="{{ $homeSettings->our_team_section_box_1_twitter_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_twitter_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 Twitter Link" />
                                 </div>
                             </div>
@@ -1089,7 +1089,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 Instagram Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_instagram_link" name="our_team_section_box_1_instagram_link"
-                                        value="{{ $homeSettings->our_team_section_box_1_instagram_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_instagram_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 Instagram Link" />
                                 </div>
                             </div>
@@ -1098,7 +1098,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 1 LinkedIn Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_1_linkedin_link" name="our_team_section_box_1_linkedin_link"
-                                        value="{{ $homeSettings->our_team_section_box_1_linkedin_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_1_linkedin_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 1 LinkedIn Link" />
                                 </div>
                             </div>
@@ -1111,7 +1111,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 Name <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_name" name="our_team_section_box_2_name"
-                                        value="{{ $homeSettings->our_team_section_box_2_name ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_name ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 Name" />
                                 </div>
                             </div>
@@ -1120,7 +1120,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 Designation <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_designation" name="our_team_section_box_2_designation"
-                                        value="{{ $homeSettings->our_team_section_box_2_designation ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_designation ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 Designation" />
                                 </div>
                             </div>
@@ -1139,7 +1139,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 Facebook Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_facebook_link" name="our_team_section_box_2_facebook_link"
-                                        value="{{ $homeSettings->our_team_section_box_2_facebook_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_facebook_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 Facebook Link" />
                                 </div>
                             </div>
@@ -1148,7 +1148,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 Twitter Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_twitter_link" name="our_team_section_box_2_twitter_link"
-                                        value="{{ $homeSettings->our_team_section_box_2_twitter_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_twitter_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 Twitter Link" />
                                 </div>
                             </div>
@@ -1159,7 +1159,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 Instagram Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_instagram_link" name="our_team_section_box_2_instagram_link"
-                                        value="{{ $homeSettings->our_team_section_box_2_instagram_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_instagram_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 Instagram Link" />
                                 </div>
                             </div>
@@ -1168,7 +1168,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 2 LinkedIn Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_2_linkedin_link" name="our_team_section_box_2_linkedin_link"
-                                        value="{{ $homeSettings->our_team_section_box_2_linkedin_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_2_linkedin_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 2 LinkedIn Link" />
                                 </div>
                             </div>
@@ -1181,7 +1181,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 Name <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_name" name="our_team_section_box_3_name"
-                                        value="{{ $homeSettings->our_team_section_box_3_name ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_name ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 Name" />
                                 </div>
                             </div>
@@ -1190,7 +1190,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 Designation <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_designation" name="our_team_section_box_3_designation"
-                                        value="{{ $homeSettings->our_team_section_box_3_designation ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_designation ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 Designation" />
                                 </div>
                             </div>
@@ -1209,7 +1209,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 Facebook Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_facebook_link" name="our_team_section_box_3_facebook_link"
-                                        value="{{ $homeSettings->our_team_section_box_3_facebook_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_facebook_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 Facebook Link" />
                                 </div>
                             </div>
@@ -1218,7 +1218,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 Twitter Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_twitter_link" name="our_team_section_box_3_twitter_link"
-                                        value="{{ $homeSettings->our_team_section_box_3_twitter_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_twitter_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 Twitter Link" />
                                 </div>
                             </div>
@@ -1229,7 +1229,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 Instagram Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_instagram_link" name="our_team_section_box_3_instagram_link"
-                                        value="{{ $homeSettings->our_team_section_box_3_instagram_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_instagram_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 Instagram Link" />
                                 </div>
                             </div>
@@ -1238,7 +1238,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 3 LinkedIn Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_3_linkedin_link" name="our_team_section_box_3_linkedin_link"
-                                        value="{{ $homeSettings->our_team_section_box_3_linkedin_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_3_linkedin_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 3 LinkedIn Link" />
                                 </div>
                             </div>
@@ -1251,7 +1251,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 Name <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_name" name="our_team_section_box_4_name"
-                                        value="{{ $homeSettings->our_team_section_box_4_name ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_name ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 Name" />
                                 </div>
                             </div>
@@ -1260,7 +1260,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 Designation <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_designation" name="our_team_section_box_4_designation"
-                                        value="{{ $homeSettings->our_team_section_box_4_designation ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_designation ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 Designation" />
                                 </div>
                             </div>
@@ -1279,7 +1279,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 Facebook Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_facebook_link" name="our_team_section_box_4_facebook_link"
-                                        value="{{ $homeSettings->our_team_section_box_4_facebook_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_facebook_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 Facebook Link" />
                                 </div>
                             </div>
@@ -1288,7 +1288,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 Twitter Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_twitter_link" name="our_team_section_box_4_twitter_link"
-                                        value="{{ $homeSettings->our_team_section_box_4_twitter_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_twitter_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 Twitter Link" />
                                 </div>
                             </div>
@@ -1299,7 +1299,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 Instagram Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_instagram_link" name="our_team_section_box_4_instagram_link"
-                                        value="{{ $homeSettings->our_team_section_box_4_instagram_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_instagram_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 Instagram Link" />
                                 </div>
                             </div>
@@ -1308,7 +1308,7 @@
                                     <label class="control-label" for="slug">Our Team Section Box 4 LinkedIn Link <span
                                             class="optional">(optional)</span></label>
                                     <input type="text" class="form-control" id="our_team_section_box_4_linkedin_link" name="our_team_section_box_4_linkedin_link"
-                                        value="{{ $homeSettings->our_team_section_box_4_linkedin_link ?: '' }}"
+                                        value="{{ $homeSettings->our_team_section_box_4_linkedin_link ?? '' }}"
                                         placeholder="Enter Our Team Section Box 4 LinkedIn Link" />
                                 </div>
                             </div>
