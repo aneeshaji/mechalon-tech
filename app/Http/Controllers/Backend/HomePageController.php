@@ -689,130 +689,130 @@ class HomePageController extends Controller
     {
         //Home
         if (!is_null($request->banner_image_1)) {
-            $homeSettingsObj->banner_image_1 = UploadHelper::upload('banner_image_1', $request->banner_image_1, 'home' . '-' . time() . '-banner-1', 'public/assets/images/pages/home');
+            $homeSettingsObj->banner_image_1 = UploadHelper::upload('banner_image_1', $request->banner_image_1, 'home' . '-' . time() . '-banner-1', 'assets/images/pages/home');
         }
 
         if (!is_null($request->banner_image_2)) {
-            $homeSettingsObj->banner_image_2 = UploadHelper::upload('banner_image_2', $request->banner_image_2, 'home' . '-' . time() . '-banner-2', 'public/assets/images/pages/home');
+            $homeSettingsObj->banner_image_2 = UploadHelper::upload('banner_image_2', $request->banner_image_2, 'home' . '-' . time() . '-banner-2', 'assets/images/pages/home');
         }
 
         if (!is_null($request->main_service_icon_1)) {
-            $homeSettingsObj->main_service_icon_1 = UploadHelper::upload('main_service_icon_1', $request->main_service_icon_1, 'main-service'. '-' . time() . '-icon-1', 'public/assets/images/pages/home');
+            $homeSettingsObj->main_service_icon_1 = UploadHelper::upload('main_service_icon_1', $request->main_service_icon_1, 'main-service'. '-' . time() . '-icon-1', 'assets/images/pages/home');
         }
 
         if (!is_null($request->main_service_icon_2)) {
-            $homeSettingsObj->main_service_icon_2 = UploadHelper::upload('main_service_icon_2', $request->main_service_icon_2, 'main-service'. '-' . time() . '-icon-2', 'public/assets/images/pages/home');
+            $homeSettingsObj->main_service_icon_2 = UploadHelper::upload('main_service_icon_2', $request->main_service_icon_2, 'main-service'. '-' . time() . '-icon-2', 'assets/images/pages/home');
         }
 
         if (!is_null($request->main_service_icon_2)) {
-            $homeSettingsObj->main_service_icon_2 = UploadHelper::upload('main_service_icon_2', $request->main_service_icon_2, 'main-service'. '-' . time() . '-icon-2', 'public/assets/images/pages/home');
+            $homeSettingsObj->main_service_icon_2 = UploadHelper::upload('main_service_icon_2', $request->main_service_icon_2, 'main-service'. '-' . time() . '-icon-2', 'assets/images/pages/home');
         }
 
         if (!is_null($request->main_service_icon_3)) {
-            $homeSettingsObj->main_service_icon_3 = UploadHelper::upload('main_service_icon_3', $request->main_service_icon_3, 'main-service'. '-' . time() . '-icon-3', 'public/assets/images/pages/home');
+            $homeSettingsObj->main_service_icon_3 = UploadHelper::upload('main_service_icon_3', $request->main_service_icon_3, 'main-service'. '-' . time() . '-icon-3', 'assets/images/pages/home');
         }
 
         //About
         if (!is_null($request->about_us_section_banner_image)) {
-            $homeSettingsObj->about_us_section_banner_image = UploadHelper::upload('about_us_section_banner_image', $request->about_us_section_banner_image, 'about-section'. '-' . time() . '-banner', 'public/assets/images/pages/home');
+            $homeSettingsObj->about_us_section_banner_image = UploadHelper::upload('about_us_section_banner_image', $request->about_us_section_banner_image, 'about-section'. '-' . time() . '-banner', 'assets/images/pages/home');
         }
 
         //Services
         if (!is_null($request->services_section_box_1_icon)) {
-            $homeSettingsObj->services_section_box_1_icon = UploadHelper::upload('services_section_box_1_icon', $request->services_section_box_1_icon, 'services-section-box-1'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_1_icon = UploadHelper::upload('services_section_box_1_icon', $request->services_section_box_1_icon, 'services-section-box-1'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_2_icon)) {
-            $homeSettingsObj->services_section_box_2_icon = UploadHelper::upload('services_section_box_2_icon', $request->services_section_box_2_icon, 'services-section-box-2'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_2_icon = UploadHelper::upload('services_section_box_2_icon', $request->services_section_box_2_icon, 'services-section-box-2'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_3_icon)) {
-            $homeSettingsObj->services_section_box_3_icon = UploadHelper::upload('services_section_box_3_icon', $request->services_section_box_3_icon, 'services-section-box-3'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_3_icon = UploadHelper::upload('services_section_box_3_icon', $request->services_section_box_3_icon, 'services-section-box-3'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_4_icon)) {
-            $homeSettingsObj->services_section_box_4_icon = UploadHelper::upload('services_section_box_4_icon', $request->services_section_box_4_icon, 'services-section-box-4'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_4_icon = UploadHelper::upload('services_section_box_4_icon', $request->services_section_box_4_icon, 'services-section-box-4'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_5_icon)) {
-            $homeSettingsObj->services_section_box_5_icon = UploadHelper::upload('services_section_box_5_icon', $request->services_section_box_5_icon, 'services-section-box-5'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_5_icon = UploadHelper::upload('services_section_box_5_icon', $request->services_section_box_5_icon, 'services-section-box-5'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_6_icon)) {
-            $homeSettingsObj->services_section_box_6_icon = UploadHelper::upload('services_section_box_6_icon', $request->services_section_box_6_icon, 'services-section-box-6'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_6_icon = UploadHelper::upload('services_section_box_6_icon', $request->services_section_box_6_icon, 'services-section-box-6'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_7_icon)) {
-            $homeSettingsObj->services_section_box_7_icon = UploadHelper::upload('services_section_box_7_icon', $request->services_section_box_7_icon, 'services-section-box-7'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_7_icon = UploadHelper::upload('services_section_box_7_icon', $request->services_section_box_7_icon, 'services-section-box-7'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->services_section_box_8_icon)) {
-            $homeSettingsObj->services_section_box_8_icon = UploadHelper::upload('services_section_box_8_icon', $request->services_section_box_8_icon, 'services-section-box-8'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->services_section_box_8_icon = UploadHelper::upload('services_section_box_8_icon', $request->services_section_box_8_icon, 'services-section-box-8'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         //Why choose us
         if (!is_null($request->why_choose_us_section_box_1_bg_image)) {
-            $homeSettingsObj->why_choose_us_section_box_1_bg_image = UploadHelper::upload('why_choose_us_section_box_1_bg_image', $request->why_choose_us_section_box_1_bg_image, 'why-choose-box-1'. '-' . time() . '-bg-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_1_bg_image = UploadHelper::upload('why_choose_us_section_box_1_bg_image', $request->why_choose_us_section_box_1_bg_image, 'why-choose-box-1'. '-' . time() . '-bg-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->why_choose_us_section_box_2_bg_image)) {
-            $homeSettingsObj->why_choose_us_section_box_2_bg_image = UploadHelper::upload('why_choose_us_section_box_2_bg_image', $request->why_choose_us_section_box_2_bg_image, 'why-choose-box-2'. '-' . time() . '-bg-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_2_bg_image = UploadHelper::upload('why_choose_us_section_box_2_bg_image', $request->why_choose_us_section_box_2_bg_image, 'why-choose-box-2'. '-' . time() . '-bg-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->why_choose_us_section_box_3_bg_image)) {
-            $homeSettingsObj->why_choose_us_section_box_3_bg_image = UploadHelper::upload('why_choose_us_section_box_3_bg_image', $request->why_choose_us_section_box_3_bg_image, 'why-choose-box-3'. '-' . time() . '-bg-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_3_bg_image = UploadHelper::upload('why_choose_us_section_box_3_bg_image', $request->why_choose_us_section_box_3_bg_image, 'why-choose-box-3'. '-' . time() . '-bg-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->why_choose_us_section_box_1_icon)) {
-            $homeSettingsObj->why_choose_us_section_box_1_icon = UploadHelper::upload('why_choose_us_section_box_1_icon', $request->why_choose_us_section_box_1_icon, 'why-choose-box-1'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_1_icon = UploadHelper::upload('why_choose_us_section_box_1_icon', $request->why_choose_us_section_box_1_icon, 'why-choose-box-1'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->why_choose_us_section_box_2_icon)) {
-            $homeSettingsObj->why_choose_us_section_box_2_icon = UploadHelper::upload('why_choose_us_section_box_2_icon', $request->why_choose_us_section_box_2_icon, 'why-choose-box-2'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_2_icon = UploadHelper::upload('why_choose_us_section_box_2_icon', $request->why_choose_us_section_box_2_icon, 'why-choose-box-2'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         if (!is_null($request->why_choose_us_section_box_3_icon)) {
-            $homeSettingsObj->why_choose_us_section_box_3_icon = UploadHelper::upload('why_choose_us_section_box_3_icon', $request->why_choose_us_section_box_3_icon, 'why-choose-box-3'. '-' . time() . '-icon', 'public/assets/images/pages/home');
+            $homeSettingsObj->why_choose_us_section_box_3_icon = UploadHelper::upload('why_choose_us_section_box_3_icon', $request->why_choose_us_section_box_3_icon, 'why-choose-box-3'. '-' . time() . '-icon', 'assets/images/pages/home');
         }
 
         //What we do
         if (!is_null($request->what_we_do_section_bg_image)) {
-            $homeSettingsObj->what_we_do_section_bg_image = UploadHelper::upload('what_we_do_section_bg_image', $request->what_we_do_section_bg_image, 'what-we-do'. '-' . time() . '-bg-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->what_we_do_section_bg_image = UploadHelper::upload('what_we_do_section_bg_image', $request->what_we_do_section_bg_image, 'what-we-do'. '-' . time() . '-bg-image', 'assets/images/pages/home');
         }
 
         //Contact Banner
         if (!is_null($request->contact_banner_section_bg_image)) {
-            $homeSettingsObj->contact_banner_section_bg_image = UploadHelper::upload('contact_banner_section_bg_image', $request->contact_banner_section_bg_image, 'contact-banner'. '-' . time() . '-bg-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->contact_banner_section_bg_image = UploadHelper::upload('contact_banner_section_bg_image', $request->contact_banner_section_bg_image, 'contact-banner'. '-' . time() . '-bg-image', 'assets/images/pages/home');
         }
 
         //Our Process
         if (!is_null($request->our_process_section_box_1_image)) {
-            $homeSettingsObj->our_process_section_box_1_image = UploadHelper::upload('our_process_section_box_1_image', $request->our_process_section_box_1_image, 'our-process-box-1'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_process_section_box_1_image = UploadHelper::upload('our_process_section_box_1_image', $request->our_process_section_box_1_image, 'our-process-box-1'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->our_process_section_box_2_image)) {
-            $homeSettingsObj->our_process_section_box_2_image = UploadHelper::upload('our_process_section_box_2_image', $request->our_process_section_box_2_image, 'our-process-box-2'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_process_section_box_2_image = UploadHelper::upload('our_process_section_box_2_image', $request->our_process_section_box_2_image, 'our-process-box-2'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->our_process_section_box_3_image)) {
-            $homeSettingsObj->our_process_section_box_3_image = UploadHelper::upload('our_process_section_box_3_image', $request->our_process_section_box_3_image, 'our-process-box-3'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_process_section_box_3_image = UploadHelper::upload('our_process_section_box_3_image', $request->our_process_section_box_3_image, 'our-process-box-3'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         //Our Team
         if (!is_null($request->our_team_section_box_1_image)) {
-            $homeSettingsObj->our_team_section_box_1_image = UploadHelper::upload('our_team_section_box_1_image', $request->our_team_section_box_1_image, 'our-team-box-1'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_team_section_box_1_image = UploadHelper::upload('our_team_section_box_1_image', $request->our_team_section_box_1_image, 'our-team-box-1'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->our_team_section_box_2_image)) {
-            $homeSettingsObj->our_team_section_box_2_image = UploadHelper::upload('our_team_section_box_2_image', $request->our_team_section_box_2_image, 'our-team-box-2'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_team_section_box_2_image = UploadHelper::upload('our_team_section_box_2_image', $request->our_team_section_box_2_image, 'our-team-box-2'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->our_team_section_box_3_image)) {
-            $homeSettingsObj->our_team_section_box_3_image = UploadHelper::upload('our_team_section_box_3_image', $request->our_team_section_box_3_image, 'our-team-box-3'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_team_section_box_3_image = UploadHelper::upload('our_team_section_box_3_image', $request->our_team_section_box_3_image, 'our-team-box-3'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         if (!is_null($request->our_team_section_box_4_image)) {
-            $homeSettingsObj->our_team_section_box_4_image = UploadHelper::upload('our_team_section_box_4_image', $request->our_team_section_box_4_image, 'our-team-box-4'. '-' . time() . '-image', 'public/assets/images/pages/home');
+            $homeSettingsObj->our_team_section_box_4_image = UploadHelper::upload('our_team_section_box_4_image', $request->our_team_section_box_4_image, 'our-team-box-4'. '-' . time() . '-image', 'assets/images/pages/home');
         }
 
         return true;

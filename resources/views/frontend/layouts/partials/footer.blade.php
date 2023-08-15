@@ -29,7 +29,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-footer-widget">
                         <div class="logo">
-                            <a href="#"><img src="{{ asset('public/assets/frontend/img/main-logo.png') }}" alt="image"></a>
+                            <a href="#"><img src="{{ asset('assets/frontend/img/main-logo.png') }}" alt="image"></a>
                             <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
                         </div>
 
@@ -103,5 +103,5 @@
             </div>
         </div>
 
-        <div class="circle-map"><img src="{{ asset('public/assets/frontend/img/circle-map.png') }}" alt="image"></div>
+        <div class="circle-map"><img src="{{ asset('assets/frontend/img/circle-map.png') }}" alt="image"></div>
     </footer>

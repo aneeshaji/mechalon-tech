@@ -21,16 +21,16 @@
                     <!-- Logo text -->
                     <span class="logo- text-white">
                         @if (!empty($settings->general->logo))
-                            <img src="{{ asset('public/assets/images/logo/' . $settings->general->logo) }}"
+                            <img src="{{ asset('assets/images/logo/' . $settings->general->logo) }}"
                                 alt="" width="50" />
                         @endif
                         <!-- dark Logo text -->
                         <span>
                             {{ $settings->general->name }}
                         </span>
-                        {{-- <img src="{{ asset('public/assets/backend/images/logo-light-text.png') }}" alt="homepage" class="dark-logo" /> --}}
+                        {{-- <img src="{{ asset('assets/backend/images/logo-light-text.png') }}" alt="homepage" class="dark-logo" /> --}}
                         <!-- Light Logo text -->
-                        {{-- <img src="{{ asset('public/assets/backend/images/logo-light-text.png') }}" class="light-logo" alt="homepage" /> --}}
+                        {{-- <img src="{{ asset('assets/backend/images/logo-light-text.png') }}" class="light-logo" alt="homepage" /> --}}
                     </span>
                 </a>
                 <a class="sidebartoggler d-none d-md-block" href="javascript:void(0)" data-sidebartype="mini-sidebar">

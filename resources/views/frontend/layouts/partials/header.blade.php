@@ -28,7 +28,7 @@
             <div class="evolta-responsive-menu">
                 <div class="logo">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('public/assets/frontend/img/main-logo.png') }}" alt="logo">
+                        <img src="{{ asset('assets/frontend/img/main-logo.png') }}" alt="logo">
                     </a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('public/assets/frontend/img/main-logo.png') }}" alt="logo">
+                    <img src="{{ asset('assets/frontend/img/main-logo.png') }}" alt="logo">
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

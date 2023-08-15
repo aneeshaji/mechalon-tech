@@ -89,7 +89,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="about-image">
-                    <img src="{{ asset('public/assets/frontend/img/about-img2.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/about-img2.jpg') }}" alt="image">
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-programming-code"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Web Development</a></h3>
                     <div class="content">
@@ -145,7 +145,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-plugin"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Product Engineering</a></h3>
                     <div class="content">
@@ -161,7 +161,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-analysis"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Data Analytics</a></h3>
                     <div class="content">
@@ -177,7 +177,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-cyber-security"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Cyber Security</a></h3>
                     <div class="content">
@@ -193,7 +193,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-code"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Desktop Applications</a></h3>
                     <div class="content">
@@ -209,7 +209,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-application"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Mobile Applications</a></h3>
                     <div class="content">
@@ -225,7 +225,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-computer-graphic"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">IT Consulting</a></h3>
                     <div class="content">
@@ -241,7 +241,7 @@
                 <div class="single-services-item">
                     <div class="icon">
                         <i class="flaticon-web"></i>
-                        <img src="{{ asset('public/assets/frontend/img/shape-color.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Machine Learning</a></h3>
                     <div class="content">
@@ -275,7 +275,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-choose-box with-box-shadow">
-                    <img src="{{ asset('public/assets/frontend/img/why-choose-us/4.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/why-choose-us/4.jpg') }}" alt="image">
 
                     <div class="title">
                         <h3>Industry Expertise</h3>
@@ -294,7 +294,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-choose-box with-box-shadow">
-                    <img src="{{ asset('public/assets/frontend/img/why-choose-us/5.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/why-choose-us/5.jpg') }}" alt="image">
 
                     <div class="title">
                         <h3>Expertise & Leadership</h3>
@@ -313,7 +313,7 @@
 
             <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
                 <div class="single-choose-box with-box-shadow">
-                    <img src="{{ asset('public/assets/frontend/img/why-choose-us/6.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/why-choose-us/6.jpg') }}" alt="image">
 
                     <div class="title">
                         <h3>Dedicated IT Solution</h3>
@@ -332,7 +332,7 @@
         </div>
     </div>
 
-    <div class="circle-map"><img src="{{ asset('public/assets/frontend/img/circle-map.png') }}" alt="image"></div>
+    <div class="circle-map"><img src="{{ asset('assets/frontend/img/circle-map.png') }}" alt="image"></div>
 </section>
 <!-- End Why Choose Us Area -->
 
@@ -392,7 +392,7 @@
 
             <div class="col-lg-6 col-md-12">
                 <div class="what-we-do-image">
-                    <img src="{{ asset('public/assets/frontend/img/what-we-do.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/frontend/img/what-we-do.jpg') }}" alt="image">
                 </div>
             </div>
         </div>
@@ -562,7 +562,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-working-process-box">
                     <div class="icon">
-                        <img src="{{ asset('public/assets/frontend/img/icon1.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/icon1.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Planning & Analysis</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -574,7 +574,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-working-process-box">
                     <div class="icon">
-                        <img src="{{ asset('public/assets/frontend/img/icon2.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/icon2.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Design & Prototyping</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -586,7 +586,7 @@
             <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
                 <div class="single-working-process-box">
                     <div class="icon">
-                        <img src="{{ asset('public/assets/frontend/img/icon3.png') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/icon3.png') }}" alt="image">
                     </div>
                     <h3><a href="#">Software Development</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -618,7 +618,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-member">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/1.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -638,7 +638,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-member">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/2.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/2.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -658,7 +658,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-member">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/3.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/3.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -678,7 +678,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-team-member">
                     <div class="team-image">
-                        <img src="{{ asset('public/assets/frontend/img/team/4.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/frontend/img/team/4.jpg') }}" alt="image">
 
                         <ul class="social">
                             <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
@@ -788,7 +788,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog-post-item">
                     <div class="image">
-                        <a href="#"><img src="{{ asset('public/assets/frontend/img/blog/1.jpg') }}" alt="image"></a>
+                        <a href="#"><img src="{{ asset('assets/frontend/img/blog/1.jpg') }}" alt="image"></a>
                     </div>
 
                     <div class="content">
@@ -808,7 +808,7 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-blog-post-item">
                     <div class="image">
-                        <a href="#"><img src="{{ asset('public/assets/frontend/img/blog/2.jpg') }}" alt="image"></a>
+                        <a href="#"><img src="{{ asset('assets/frontend/img/blog/2.jpg') }}" alt="image"></a>
                     </div>
 
                     <div class="content">
@@ -828,7 +828,7 @@
             <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                 <div class="single-blog-post-item">
                     <div class="image">
-                        <a href="#"><img src="{{ asset('public/assets/frontend/img/blog/3.jpg') }}" alt="image"></a>
+                        <a href="#"><img src="{{ asset('assets/frontend/img/blog/3.jpg') }}" alt="image"></a>
                     </div>
 
                     <div class="content">
