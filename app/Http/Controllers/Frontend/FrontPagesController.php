@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\HomePageSetting;
 
 class FrontPagesController extends Controller
 {
@@ -16,7 +17,8 @@ class FrontPagesController extends Controller
      */
     public function index()
     {
-        return view('frontend.pages.index');
+        $homeSettings = HomePageSetting::first();
+        return view('frontend.pages.index', compact('homeSettings'));
     }
 
     /**

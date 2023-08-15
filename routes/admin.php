@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\ContactsController;
 use App\Http\Controllers\Backend\CacheController;
 use App\Http\Controllers\Backend\LanguagesController;
 use App\Http\Controllers\Backend\SettingsController;
+use App\Http\Controllers\Backend\HomePageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -67,6 +68,7 @@ Route::group(['prefix' => ''], function () {
  */
 Route::group(['prefix' => ''], function () {
     Route::resource('contacts', ContactsController::class);
+
 });
 
 /**
@@ -76,6 +78,20 @@ Route::group(['prefix' => 'settings'], function () {
     Route::get('/', [SettingsController::class, 'index'])->name('settings.index');
     Route::put('/update', [SettingsController::class, 'update'])->name('settings.update');
     Route::resource('languages', LanguagesController::class);
+});
+
+/**
+ * Page Management Routes
+ */
+Route::group(['prefix' => ''], function () {
+   // Route::get('page-management/home', [HomePageController::class, 'home'])->name('page-management.home');
+   Route::resource('page-management/home', HomePageController::class, [
+        'names' => [
+            'store' => 'page-management.home.store',
+            'show' => 'page-management.home.show',
+            'index' => 'page-management.home.index'
+        ]
+    ]);
 });
 
 

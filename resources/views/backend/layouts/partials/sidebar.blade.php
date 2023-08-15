@@ -70,7 +70,7 @@
                 @endcan
 
                 @if ($user->can('category.view') || $user->can('category.create'))
-                <li class="sidebar-item ">
+                <!-- <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-tune"></i>
                         <span class="hide-menu">Categories </span>
@@ -94,11 +94,11 @@
                         </li>
                         @endif
                     </ul>
-                </li>
+                </li> -->
                 @endif
 
                 @if ($user->can('page.view') || $user->can('page.create'))
-                <li class="sidebar-item ">
+                <!-- <li class="sidebar-item ">
                     <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
                         <i class="mdi mdi-tag-text-outline"></i>
                         <span class="hide-menu">Article/Pages </span>
@@ -121,6 +121,22 @@
                             </a>
                         </li>
                         @endif
+                    </ul>
+                </li> -->
+                <li class="sidebar-item ">
+                    <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false">
+                        <i class="mdi mdi-tag-text-outline"></i>
+                        <span class="hide-menu">Pages </span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse first-level {{ (Route::is('admin.page-management.home')) ? 'in' : null }}">
+                        <!-- @if ($user->can('page.view')) -->
+                        <li class="sidebar-item">
+                            <a href="{{ route('admin.page-management.home.index') }}" class="sidebar-link {{ (Route::is('page-management.home.index')) ? 'active' : null }}">
+                                <i class="mdi mdi-view-list"></i>
+                                <span class="hide-menu"> Home </span>
+                            </a>
+                        </li>
+                        <!-- @endif -->
                     </ul>
                 </li>
                 @endif
@@ -153,7 +169,7 @@
                 </li>
                 @endif
 
-                @if ($user->can('booking_request.view') || $user->can('booking_request.edit') || $user->can('booking_request.delete'))
+                <!-- @if ($user->can('booking_request.view') || $user->can('booking_request.edit') || $user->can('booking_request.delete'))
                 @php
                     $count_pending_booking_request = \Modules\Booking\Entities\BookingRequest::where('status', 'pending')->count();
                 @endphp
@@ -173,7 +189,7 @@
                         </li>
                         @endif
                     </ul>
-                </li>
+                </li> -->
                 @endif
 
                 @if ($user->can('blog.view') || $user->can('blog.create'))
