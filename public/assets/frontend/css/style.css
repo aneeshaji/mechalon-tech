@@ -6574,13 +6574,13 @@ Banner Area CSS
   padding-bottom: 340px;
 }
 
-.banner-area.bg-1 {
+/* .banner-area.bg-1 {
   background-image: url(../../../../assets/frontend/img/banner-bg.jpg);
-}
+} */
 
-.banner-area.bg-2 {
+/* .banner-area.bg-2 {
   background-image: url(../../../../assets/frontend/img/banner-bg2.jpg);
-}
+} */
 
 .banner-area .container {
   max-width: 1350px;

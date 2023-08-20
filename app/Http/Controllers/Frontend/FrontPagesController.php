@@ -18,7 +18,8 @@ class FrontPagesController extends Controller
     public function index()
     {
         $homeSettings = HomePageSetting::first();
-        return view('frontend.pages.index', compact('homeSettings'));
+        $imagePath = 'assets/images/pages/home/';
+        return view('frontend.pages.index', compact('homeSettings', 'imagePath'));
     }
 
     /**

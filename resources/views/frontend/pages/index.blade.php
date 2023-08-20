@@ -8,31 +8,32 @@
 
 <!-- Start Banner Area -->
 <div class="home-slides owl-carousel owl-theme">
-    <div class="banner-area bg-1">
+    @if(isset($homeSettings->banner_image_1))
+        <div class="banner-area bg-1" style="background-image: url({{ $imagePath.$homeSettings->banner_image_1 }})">
+    @else
+        <div class="banner-area bg-1" style="background-image: url(assets/frontend/img/banner-bg.jpg)">
+    @endif
+    <!-- <div class="banner-area bg-1" style="background-image: url(assets/frontend/img/banner-bg.jpg)"> -->
         <div class="container">
             <div class="banner-content">
-                <h1>Solve Busines Challenges With IT</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                    maecenas accumsan lacus vel facilisis.</p>
+                <h1>{{ $homeSettings->page_main_title_1 ?? '' }}</h1>
+                <p>{!! $homeSettings->page_main_description_1 ?? '' !!}</p>
                 <div class="btn-box">
-                    <a href="#" class="btn btn-primary">Read More</a>
-                    <a href="#" class="btn btn-light">Get Started</a>
+                    <a href="{{ $homeSettings->read_more_btn_link ?? '#' }}" class="btn btn-primary">Read More</a>
+                    <a href="{{ $homeSettings->get_started_btn_link ?? '#' }}" class="btn btn-light">Get Started</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="banner-area bg-2">
+    <div class="banner-area bg-2" style="background-image: url(assets/frontend/img/banner-bg2.jpg)">
         <div class="container">
             <div class="banner-content">
-                <h1>Solve Busines Challenges With IT</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
-                    maecenas accumsan lacus vel facilisis.</p>
+                <h1>{{ $homeSettings->page_main_title_2 ?? '' }}</h1>
+                <p>{!! $homeSettings->page_main_description_2 ?? '' !!}</p>
                 <div class="btn-box">
-                    <a href="#" class="btn btn-primary">Read More</a>
-                    <a href="#" class="btn btn-light">Get Started</a>
+                    <a href="{{ $homeSettings->read_more_btn_link ?? '#' }}" target="_blank" class="btn btn-primary">Read More</a>
+                    <a href="{{ $homeSettings->get_started_btn_link ?? '#' }}" target="_blank" class="btn btn-light">Get Started</a>
                 </div>
             </div>
         </div>
@@ -48,10 +49,9 @@
                     <div class="icon">
                         <i class="flaticon-branch"></i>
                     </div>
-                    <h3><a href="#">IT Management</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->main_service_read_more_btn_link_1 ?? '' }}" target="_blank">{{ $homeSettings->main_service_title_1 ?? '' }}</a></h3>
+                    <p>{!! $homeSettings->main_service_description_1 ?? '' !!}</p>
+                    <a href="{{ $homeSettings->main_service_read_more_btn_link_1 ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
 
@@ -60,10 +60,9 @@
                     <div class="icon">
                         <i class="flaticon-programming-code"></i>
                     </div>
-                    <h3><a href="#">Development</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->main_service_read_more_btn_link_2 ?? '' }}" target="_blank">{{ $homeSettings->main_service_title_2 ?? '' }}</a></h3>
+                    <p>{!! $homeSettings->main_service_description_2 ?? '' !!}</p>
+                    <a href="{{ $homeSettings->main_service_read_more_btn_link_2 ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
 
@@ -72,10 +71,9 @@
                     <div class="icon">
                         <i class="flaticon-tools-and-utensils"></i>
                     </div>
-                    <h3><a href="#">UX/UI Design</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->main_service_read_more_btn_link_3 ?? '' }}" target="_blank">{{ $homeSettings->main_service_title_3 ?? '' }}</a></h3>
+                    <p>{!! $homeSettings->main_service_description_3 ?? '' !!}</p>
+                    <a href="{{ $homeSettings->main_service_read_more_btn_link_3 ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
         </div>
@@ -97,10 +95,9 @@
                 <div class="about-content">
                     <div class="content">
                         <span>About Us</span>
-                        <h2>We've Been Thriving in 37 Years The Tech Area</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra.</p>
-                        <a href="#" class="btn btn-primary">View More</a>
+                        <h2>{{ $homeSettings->about_us_section_title ?? '' }}</h2>
+                        <p>{!! $homeSettings->about_us_section_description ?? '' !!}</p>
+                        <a href="{{ $homeSettings->about_us_section_view_more_btn_link ?? '' }}" target="_blank" class="btn btn-primary">View More</a>
                     </div>
                 </div>
             </div>
@@ -115,12 +112,11 @@
         <div class="section-title-style-two">
             <div class="content">
                 <span>Our Services</span>
-                <h2>We Offer Professional IT Solutions For Business</h2>
+                <h2>{{ $homeSettings->services_section_title ?? '' }}</h2>
             </div>
 
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                <p>{!! $homeSettings->services_section_description ?? '' !!}</p>
             </div>
         </div>
 
@@ -131,12 +127,12 @@
                         <i class="flaticon-programming-code"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Web Development</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_1_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_1_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Web Development</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_1_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_1_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_1_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_1_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -147,12 +143,12 @@
                         <i class="flaticon-plugin"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Product Engineering</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_2_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_2_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Product Engineering</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_2_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_2_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_2_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_2_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -163,12 +159,12 @@
                         <i class="flaticon-analysis"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Data Analytics</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_3_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_3_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Data Analytics</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_3_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_3_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_3_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_3_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -179,12 +175,12 @@
                         <i class="flaticon-cyber-security"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Cyber Security</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_4_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_4_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Cyber Security</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_4_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_4_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_4_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_4_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -195,12 +191,12 @@
                         <i class="flaticon-code"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Desktop Applications</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_5_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_5_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Desktop Applications</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_5_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_5_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_5_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_5_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -211,12 +207,12 @@
                         <i class="flaticon-application"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Mobile Applications</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_6_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_6_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Mobile Applications</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_6_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_6_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_6_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_6_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -227,12 +223,12 @@
                         <i class="flaticon-computer-graphic"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">IT Consulting</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_7_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_7_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">IT Consulting</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_7_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_7_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_7_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_7_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -243,12 +239,12 @@
                         <i class="flaticon-web"></i>
                         <img src="{{ asset('assets/frontend/img/shape-color.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Machine Learning</a></h3>
+                    <h3><a href="{{ $homeSettings->services_section_box_8_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_8_title ?? '' }}</a></h3>
                     <div class="content">
-                        <h3><a href="#">Machine Learning</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.
+                        <h3><a href="{{ $homeSettings->services_section_box_8_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->services_section_box_8_title ?? '' }}</a></h3>
+                        <p>{!! $homeSettings->services_section_box_8_description ?? '' !!}
                         </p>
-                        <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                        <a href="{{ $homeSettings->services_section_box_8_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                     </div>
                 </div>
             </div>
@@ -263,12 +259,11 @@
         <div class="section-title-style-two">
             <div class="content">
                 <span>Why choose us</span>
-                <h2>We Different From Others Should Choose Us</h2>
+                <h2>{{ $homeSettings->why_choose_us_section_title ?? '' }}</h2>
             </div>
 
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                <p>{!! $homeSettings->why_choose_us_section_description ?? '' !!}</p>
             </div>
         </div>
 
@@ -278,15 +273,14 @@
                     <img src="{{ asset('assets/frontend/img/why-choose-us/4.jpg') }}" alt="image">
 
                     <div class="title">
-                        <h3>Industry Expertise</h3>
+                        <h3>{{ $homeSettings->why_choose_us_section_box_1_title ?? '' }}</h3>
                     </div>
 
                     <div class="content">
                         <div class="inner-content">
-                            <h3><a href="#">Industry Expertise</a></h3>
-                            <p>Lorem ipsum dolor amet, adipiscing elit, sed do eiusmod tempor ut labore et dolore magna
-                                aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                            <h3><a href="{{ $homeSettings->why_choose_us_section_box_1_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->why_choose_us_section_box_1_title ?? '' }}</a></h3>
+                            <p>{!! $homeSettings->why_choose_us_section_box_1_description ?? '' !!}</p>
+                            <a href="{{ $homeSettings->why_choose_us_section_box_1_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -297,15 +291,14 @@
                     <img src="{{ asset('assets/frontend/img/why-choose-us/5.jpg') }}" alt="image">
 
                     <div class="title">
-                        <h3>Expertise & Leadership</h3>
+                        <h3>{{ $homeSettings->why_choose_us_section_box_2_title ?? '' }}</h3>
                     </div>
 
                     <div class="content">
                         <div class="inner-content">
-                            <h3><a href="#">Expertise & Leadership</a></h3>
-                            <p>Lorem ipsum dolor amet, adipiscing elit, sed do eiusmod tempor ut labore et dolore magna
-                                aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                            <h3><a href="{{ $homeSettings->why_choose_us_section_box_2_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->why_choose_us_section_box_2_title ?? '' }}</a></h3>
+                            <p>{!! $homeSettings->why_choose_us_section_box_2_description ?? '' !!}</p>
+                            <a href="{{ $homeSettings->why_choose_us_section_box_2_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -316,22 +309,20 @@
                     <img src="{{ asset('assets/frontend/img/why-choose-us/6.jpg') }}" alt="image">
 
                     <div class="title">
-                        <h3>Dedicated IT Solution</h3>
+                        <h3>{{ $homeSettings->why_choose_us_section_box_3_title ?? '' }}</h3>
                     </div>
 
                     <div class="content">
                         <div class="inner-content">
-                            <h3><a href="#">Dedicated IT Solution</a></h3>
-                            <p>Lorem ipsum dolor amet, adipiscing elit, sed do eiusmod tempor ut labore et dolore magna
-                                aliqua. Quis ipsum suspendisse ultrices gravida.</p>
-                            <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                            <h3><a href="{{ $homeSettings->why_choose_us_section_box_3_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->why_choose_us_section_box_3_title ?? '' }}</a></h3>
+                            <p>{!! $homeSettings->why_choose_us_section_box_3_description ?? '' !!}</p>
+                            <a href="{{ $homeSettings->why_choose_us_section_box_3_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="circle-map"><img src="{{ asset('assets/frontend/img/circle-map.png') }}" alt="image"></div>
 </section>
 <!-- End Why Choose Us Area -->
@@ -342,12 +333,11 @@
         <div class="section-title-style-two">
             <div class="content">
                 <span>What We Do</span>
-                <h2>Custom IT Solutions for Your Business</h2>
+                <h2>{{ $homeSettings->what_we_do_section_title ?? '' }}</h2>
             </div>
 
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                <p>{!! $homeSettings->what_we_do_section_description ?? '' !!}</p>
             </div>
         </div>
 
@@ -357,33 +347,33 @@
                     <div class="row">
                         <div class="col-6 col-lg-6 col-md-3 col-sm-4">
                             <div class="single-funfacts">
-                                <div class="circlechart" data-percentage="60"></div>
-                                <span>Design</span>
-                                <h3>Codes</h3>
+                                <div class="circlechart" data-percentage="{{ $homeSettings->what_we_do_section_circle_1_percentage ?? '' }}"></div>
+                                <span>{{ $homeSettings->what_we_do_section_circle_1_title_1 ?? '' }}</span>
+                                <h3>{{ $homeSettings->what_we_do_section_circle_1_title_2 ?? '' }}</h3>
                             </div>
                         </div>
 
                         <div class="col-6 col-lg-6 col-md-3 col-sm-4">
                             <div class="single-funfacts">
-                                <div class="circlechart" data-percentage="75"></div>
-                                <span>Our happy</span>
-                                <h3>Clients</h3>
+                                <div class="circlechart" data-percentage="{{ $homeSettings->what_we_do_section_circle_2_percentage ?? '' }}"></div>
+                                <span>{{ $homeSettings->what_we_do_section_circle_2_title_1 ?? '' }}</span>
+                                <h3>{{ $homeSettings->what_we_do_section_circle_12_title_2 ?? '' }}</h3>
                             </div>
                         </div>
 
                         <div class="col-6 col-lg-6 col-md-3 col-sm-4">
                             <div class="single-funfacts">
-                                <div class="circlechart" data-percentage="85"></div>
-                                <span>Projects</span>
-                                <h3>Design</h3>
+                                <div class="circlechart" data-percentage="{{ $homeSettings->what_we_do_section_circle_3_percentage ?? '' }}"></div>
+                                <span>{{ $homeSettings->what_we_do_section_circle_3_title_1 ?? '' }}</span>
+                                <h3>{{ $homeSettings->what_we_do_section_circle_3_title_2 ?? '' }}</h3>
                             </div>
                         </div>
 
                         <div class="col-6 col-lg-6 col-md-3 col-sm-4 offset-lg-0 offset-md-0 offset-sm-4">
                             <div class="single-funfacts">
-                                <div class="circlechart" data-percentage="95"></div>
-                                <span>Completed</span>
-                                <h3>Projects</h3>
+                                <div class="circlechart" data-percentage="{{ $homeSettings->what_we_do_section_circle_4_percentage ?? '' }}"></div>
+                                <span>{{ $homeSettings->what_we_do_section_circle_4_title_1 ?? '' }}</span>
+                                <h3>{{ $homeSettings->what_we_do_section_circle_4_title_2 ?? '' }}</h3>
                             </div>
                         </div>
                     </div>
@@ -532,11 +522,9 @@
     <div class="container">
         <div class="build-inner-area">
             <div class="bulid-content">
-                <h2>Let's Build Your Website!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan lacus vel facilisis.</p>
-                <a href="#" class="btn btn-primary">Contact Us</a>
+                <h2>{{ $homeSettings->contact_banner_section_title ?? '' }}</h2>
+                <p>{!! $homeSettings->contact_banner_section_description ?? '' !!}</p>
+                <a href="{{ $homeSettings->contact_banner_section_btn_link ?? '' }}" target="_blank" class="btn btn-primary">Contact Us</a>
             </div>
         </div>
     </div>
@@ -549,12 +537,11 @@
         <div class="section-title-style-two">
             <div class="content">
                 <span>Our Process</span>
-                <h2>Our Development Working Process</h2>
+                <h2>{{ $homeSettings->our_process_section_title ?? '' }}</h2>
             </div>
 
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Quis suspendisse ultrices gravida. Risus commodo viverra maecenas.</p>
+                <p>{!! $homeSettings->our_process_section_description ?? '' !!}</p>
             </div>
         </div>
 
@@ -564,10 +551,9 @@
                     <div class="icon">
                         <img src="{{ asset('assets/frontend/img/icon1.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Planning & Analysis</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->our_process_section_box_1_read_more_btn_link ?? '' }}" target="_blank">{{ $homeSettings->our_process_section_box_1_title ?? '' }}</a></h3>
+                    <p>{!! $homeSettings->our_process_section_box_1_description ?? '' !!}</p>
+                    <a href="{{ $homeSettings->our_process_section_box_1_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
 
@@ -576,10 +562,9 @@
                     <div class="icon">
                         <img src="{{ asset('assets/frontend/img/icon2.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Design & Prototyping</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->our_process_section_box_2_read_more_btn_link ?? '' }}" target="_blank">Design & Prototyping</a></h3>
+                    <p>{!! $homeSettings->our_process_section_box_2_description ?? '' !!}</p>
+                    <a href="{{ $homeSettings->our_process_section_box_2_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
 
@@ -588,10 +573,9 @@
                     <div class="icon">
                         <img src="{{ asset('assets/frontend/img/icon3.png') }}" alt="image">
                     </div>
-                    <h3><a href="#">Software Development</a></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna.</p>
-                    <a href="#" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
+                    <h3><a href="{{ $homeSettings->our_process_section_box_3_read_more_btn_link ?? '' }}" target="_blank">Software Development</a></h3>
+                    <p>{!! $homeSettings->our_process_section_box_3_description ?? '' !!}</p>
+                    <a href="{{ $homeSettings->our_process_section_box_3_read_more_btn_link ?? '' }}" target="_blank" class="read-more-btn">Read More <i class="flaticon-add-1"></i></a>
                 </div>
             </div>
         </div>
@@ -605,12 +589,11 @@
         <div class="section-title-style-two text-center">
             <div class="content">
                 <span>Our Experts</span>
-                <h2>Meet Our Leadership Preparing For Your Success</h2>
+                <h2>{{ $homeSettings->our_team_section_title ?? '' }}</h2>
             </div>
 
             <div class="text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua ultrices gravida.</p>
+                <p>{!! $homeSettings->our_team_section_description ?? '' !!}</p>
             </div>
         </div>
 
@@ -621,16 +604,16 @@
                         <img src="{{ asset('assets/frontend/img/team/1.jpg') }}" alt="image">
 
                         <ul class="social">
-                            <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_1_facebook_link ?? '' }}" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_1_twitter_link ?? '' }}" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_1_instagram_link ?? '' }}" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_1_linkedin_link ?? '' }}" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="team-content">
-                        <h3>James Anderson</h3>
-                        <span>CEO & Founder</span>
+                        <h3>{{ $homeSettings->our_team_section_box_1_name ?? '' }}</h3>
+                        <span>{{ $homeSettings->our_team_section_box_1_designation ?? '' }}</span>
                     </div>
                 </div>
             </div>
@@ -641,16 +624,16 @@
                         <img src="{{ asset('assets/frontend/img/team/2.jpg') }}" alt="image">
 
                         <ul class="social">
-                            <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_2_facebook_link ?? '' }}" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_2_twitter_link ?? '' }}" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_2_instagram_link ?? '' }}" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_2_linkedin_link ?? '' }}" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="team-content">
-                        <h3>Sarah Taylor</h3>
-                        <span>Marketing Manager</span>
+                        <h3>{{ $homeSettings->our_team_section_box_2_name ?? '' }}</h3>
+                        <span>{{ $homeSettings->our_team_section_box_2_designation ?? '' }}</span>
                     </div>
                 </div>
             </div>
@@ -661,16 +644,16 @@
                         <img src="{{ asset('assets/frontend/img/team/3.jpg') }}" alt="image">
 
                         <ul class="social">
-                            <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_3_facebook_link ?? '' }}" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_3_twitter_link ?? '' }}" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_3_instagram_link ?? '' }}" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_3_linkedin_link ?? '' }}" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="team-content">
-                        <h3>Joe Root</h3>
-                        <span>Lead Developer</span>
+                        <h3>{{ $homeSettings->our_team_section_box_3_name ?? '' }}</h3>
+                        <span>{{ $homeSettings->our_team_section_box_3_designation ?? '' }}</span>
                     </div>
                 </div>
             </div>
@@ -681,16 +664,16 @@
                         <img src="{{ asset('assets/frontend/img/team/4.jpg') }}" alt="image">
 
                         <ul class="social">
-                            <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_4_facebook_link ?? '' }}" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_4_twitter_link ?? '' }}" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_4_instagram_link ?? '' }}" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
+                            <li><a href="{{ $homeSettings->our_team_section_box_4_linkedin_link ?? '' }}" target="_blank"><i class="flaticon-linkedin-letters"></i></a></li>
                         </ul>
                     </div>
 
                     <div class="team-content">
-                        <h3>Daisy Lucy</h3>
-                        <span>Lead Designer</span>
+                        <h3>{{ $homeSettings->our_team_section_box_4_name ?? '' }}</h3>
+                        <span>{{ $homeSettings->our_team_section_box_4_designation ?? '' }}</span>
                     </div>
                 </div>
             </div>
@@ -770,7 +753,7 @@
 <!-- End Clients Area -->
 
 <!-- Start Blog Area -->
-<section class="blog-area extra-pb bg-f7f9fb ptb-110">
+<!-- <section class="blog-area extra-pb bg-f7f9fb ptb-110">
     <div class="container">
         <div class="section-title-style-two">
             <div class="content">
@@ -846,6 +829,6 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- End Blog Area -->
 @endsection
